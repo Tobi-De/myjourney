@@ -14,6 +14,18 @@
 
 ### Caprover
 
+- If you use github, instead of entering your password directly into the ``password`` field, you can use a `personal access token <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>`__, which is a more secure option.
+
+- Checkout `caprover automatic deploy <https://caprover.com/docs/deployment-methods.html#automatic-deploy-using-github-bitbucket-and-etc>`__ to automate the deployment of your applications.
+
+   If you have generate a template with the ``falco`` cli or you have a dockerfile at your disposal, the only config you need in your projec to run caprover is this
+
+```text
+    {
+       "schemaVersion": 2,
+       "dockerfilePath": "./deploy/Dockerfile" # the path to your dockerfile
+    }
+```
 
 ## Prerequisites
 
