@@ -27,6 +27,12 @@
     }
 ```
 
+open ssh console
+
+```bash
+docker exec -it $(docker ps --filter name=myjourney -q) /bin/sh
+```
+
 ## Prerequisites
 
 - `Python 3.11+`
